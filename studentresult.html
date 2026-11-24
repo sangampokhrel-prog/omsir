@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q11 - Student Result Management System</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        label { display: block; margin-bottom: 8px; }
+        table { border-collapse: collapse; }
+        th, td { border: 1px solid gray; padding: 6px; }
+    </style>
+</head>
+<body>
+    <h1>Student Result Management System</h1>
+    <label>Student Name <input id="studentName" type="text"></label>
+    <label>Mathematics <input id="math" type="number"></label>
+    <label>Science <input id="science" type="number"></label>
+    <label>Computer <input id="computer" type="number"></label>
+
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="generateList()">Generate Student List</button>
+    <p id="message"></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Total Marks</th>
+                <th>Percentage</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="studentList"></tbody>
+    </table>
+
+    <script src="studentresult.js"></script>
+</body>
+</html>
